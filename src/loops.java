@@ -1,10 +1,15 @@
+import java.util.*;
+
 public class loops {
     public static void main (String agrs []){
-        int i = 0;
-        do {
-            System.out.println(i);
-            i++;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+
+        int sum =  0 ;
+        for (int i =0; i<=n; i++){
+            sum = sum + i ;
         }
-        while (i < 11);
+        System.out.println(sum);
     }
 }
