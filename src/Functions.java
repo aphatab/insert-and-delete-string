@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Functions {
-    public static int calculateSum(int a, int b){
-        int sum = a + b;
-        return sum;
+    public static int calculateProduct(int a, int b){
+
+        return a * b;
     }
 
     public static void main (String args []) {
@@ -11,8 +11,8 @@ public class Functions {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int sum = calculateSum(a,b);
-        System.out.println("Sum of 2 number is : "+ sum);
+
+        System.out.println("Product of 2 number is : "+ calculateProduct(a,b));
 
 
 
