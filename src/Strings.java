@@ -1,13 +1,22 @@
 public class Strings {
-    public static void main(String args [] ){
-        StringBuilder sb = new StringBuilder("tony");
-        System.out.println(sb);
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder("HelloWorld");
 
-        sb.insert(2,'n');
-        System.out.println(sb);
+        for(int i=0; i<sb.length()/2; i++) {
+            int front = i;
+            int back = sb.length() - i - 1;
 
-        //delet the extra n
-        sb.insert(2,3);
+
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+        }
+
+
         System.out.println(sb);
     }
 }
+
