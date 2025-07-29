@@ -1,13 +1,13 @@
 public class Strings {
     public static void main(String args [] ){
-        StringBuilder sb = new StringBuilder("aphatab");
+        StringBuilder sb = new StringBuilder("tony");
         System.out.println(sb);
 
-        //char at index 0
-        System.out.println(sb.charAt(0));
+        sb.insert(2,'n');
+        System.out.println(sb);
 
-        // set char at index
-        sb.setCharAt(0, 'p');
+        //delet the extra n
+        sb.insert(2,3);
         System.out.println(sb);
     }
 }
